@@ -1,0 +1,10 @@
+<header (featureSelected) = "onNavigate($event)"></header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <recipes *ngIf = "loadedFeature ==='recipe'"></recipes>
+      <shopping-list *ngIf = "loadedFeature ==='shopping-list'"></shopping-list>
+    </div>
+  </div>
+</div>
